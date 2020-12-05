@@ -171,9 +171,9 @@ def user_stats(df):
         recent_birth = int(df['Birth Year'].max())
         common_birth = int(df['Birth Year'].mode()[0])
     else:
-        earliest_birth = 'not collected for the selected city'
-        recent_birth = 'not collected for the selected city'
-        common_birth = 'not collected for the selected city'
+        earliest_birth = 'not collected for this city'
+        recent_birth = 'not collected for this city'
+        common_birth = 'not collected for this city'
 
     print('Subscriber counts are \n{}\nGender counts are \n{}'.format(type_count.to_string(), gender_string))
     print('\nThe earlietst birth year is {}\nThe most recent birth year is {}\nThe most common birth year is {}'.format(earliest_birth, recent_birth, common_birth))
