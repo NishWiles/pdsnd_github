@@ -195,7 +195,7 @@ def main():
 
         start_row = 0
         stop_row = 5
-        more_data = input('Would you like to see more raw data? Enter yes or no. \n> ').lower()
+        more_data = input('Would you like to see raw data? Enter yes or no. \n> ').lower()
         while more_data == 'yes':
             print(df.iloc[start_row:stop_row])
             start_row += 5
