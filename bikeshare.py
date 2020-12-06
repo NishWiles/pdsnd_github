@@ -162,7 +162,7 @@ def user_stats(df):
         gender_count = df['Gender'].value_counts()
         gender_string = gender_count.to_string()
     else:
-        gender_string = 'not collected for the selected city'
+        gender_string = 'not collected for this city'
 
 
     # TO DO: Display earliest, most recent, and most common year of birth
