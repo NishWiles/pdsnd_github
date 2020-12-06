@@ -192,7 +192,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
+        #ask user if they would like to see raw data associated with the search
         start_row = 0
         stop_row = 5
         more_data = input('Would you like to see more raw data? Enter yes or no. \n> ').lower()
